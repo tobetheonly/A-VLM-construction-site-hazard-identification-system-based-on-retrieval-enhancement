@@ -1,0 +1,25 @@
+1.按照管理员命令打开启动mongoDB
+cd D:\software\mongodb\bin
+mongod --dbpath D:\software\mongodb\data
+
+连接数据库 Please enter a MongoDB connection string (Default: mongodb://localhost/): mongodb://localhost:27017/
+use hazard_detection
+show collections
+db.cases.countDocuments()
+2.先初始化数据库
+cd C:\Users\17862\Desktop\前端\backend
+python C:\Users\17862\Desktop\前端\backend\utils\database_init.py
+
+3.运行app：python app.py
+
+
+4.前端启动：
+# 进入Flutter项目目录
+cd C:\Users\17862\Desktop\前端\flutter_application_1
+
+# 安装依赖（如果还没安装）
+flutter pub get
+
+# 启动Flutter Web应用
+flutter run -d chrome
+5.flutter run -d web-server
